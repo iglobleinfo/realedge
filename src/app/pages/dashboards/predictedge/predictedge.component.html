@@ -1,0 +1,202 @@
+<app-loader></app-loader>
+<div class="container-fluid">
+    <!-- start page title -->
+    <!-- <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-flex align-items-center justify-content-between">
+                <h4 class="mb-0 font-size-18">Dashboard</h4>
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <ng-container>
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a>
+                            </li>
+                            <li class="breadcrumb-item active">Dashboard
+                            </li>
+                        </ng-container>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- end page title -->
+    <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="row mb-2">
+                <div class="col-sm-4">
+                  <div class="search-box me-2 mb-2 d-inline-block">
+                    <div class="position-relative">
+                      <input type="text" class="form-control" id="searchTableList" placeholder="Search..." [(ngModel)]="term" (ngModelChange)="searchJob()">
+                      <i class="bx bx-search-alt search-icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="text-sm-end">
+                    <button type="button" data-bs-toggle="modal" (click)="newContactModal.show()" class="btn btn-success btn-rounded waves-effect waves-light addContact-modal mb-2"><i class="mdi mdi-plus me-1"></i> New Project</button>
+                  </div>
+                </div><!-- end col-->
+              </div>
+              <!-- end row -->
+              <div class="row">
+                @for(grid of projectData;track $index){
+                <div class=" col-xl-4 col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-4">
+                          <div class="avatar-md">
+                            <span class="avatar-title rounded-circle bg-light text-danger font-size-16">
+                              <img src="{{grid.image}}" alt height="30" />
+                            </span>
+                          </div>
+                        </div>
+            
+                        <div class="flex-grow-1 overflow-hidden">
+                          <h5 class="text-truncate font-size-15">
+                            <a href="javascript: void(0);" class="text-dark">{{grid.text}}</a>
+                          </h5>
+                          <p class="text-muted mb-4">{{grid.subtext}}</p>
+                          <div class="avatar-group">
+                            <div class="avatar-group-item">
+                              <a href="javascript: void(0);" class="d-inline-block">
+                                <img src="{{grid.users[0]}}" class="rounded-circle avatar-xs" alt />
+                              </a>
+                            </div>
+                            @if(grid.users[1]){
+                            <div class="avatar-group-item">
+                              <a href="javascript: void(0);" class="d-inline-block">
+                                <img src="{{grid.users[1]}}" class="rounded-circle avatar-xs" alt />
+                              </a>
+                            </div>}@else if (grid.users[2]) {
+                            <div class="avatar-group-item">
+                              <a href="javascript: void(0);" class="d-inline-block">
+                                <img src="{{grid.users[2]}}" class="rounded-circle avatar-xs" alt />
+                              </a>
+                            </div>}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-4 py-3 border-top">
+                      <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-3">
+                          <span class="badge" [ngClass]="{ 'bg-success': grid.status === 'Completed',
+                                'bg-warning': grid.status === 'Pending',
+                                'bg-danger': grid.status === 'Delay' }">{{grid.status}}</span>
+                        </li>
+                        <li class="list-inline-item me-3" title="Due Date" tooltip="Due Date">
+                          <i class="bx bx-calendar me-1"></i>
+                          {{grid.date}}
+                        </li>
+                        <li class="list-inline-item me-3" title="Comments" tooltip="Comments">
+                          <i class="bx bx-comment-dots me-1"></i>
+                          {{grid.comment}}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                }
+              </div>
+            
+              <div class="row">
+                <div class="col-lg-12">
+            
+                  <ul class="pagination justify-content-end mb-2 pagination-rounded justify-content-center p-2">
+                    <pagination class="pagination-wrap hstack gap-2" [totalItems]="returnedArray?.length" [itemsPerPage]="9" (pageChanged)="pageChanged($event)"></pagination>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- container-fluid -->
+
+<!-- Modal -->
+<div bsModal #newContactModal="bs-modal" class="modal fade" id="newContactModal" tabindex="-1" aria-labelledby="newContactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newContactModalLabel">Add Contact</h5>
+          <button type="button" class="btn-close" (click)="newContactModal.hide()"></button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="saveUser()" [formGroup]="createContactForm" autocomplete="off" class="needs-validation createContact-form" id="createContact-form" novalidate>
+            <div class="row">
+              <div class="col-lg-12">
+                <input type="file" class="form-control" id="userid-input">
+                <!-- <div class="text-center mb-4">
+                  <div class="position-relative d-inline-block">
+                    <div class="position-absolute bottom-0 end-0">
+                      <label for="member-image-input" class="mb-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Select Member Image">
+                        <div class="avatar-xs">
+                          <div class="avatar-title bg-light border rounded-circle text-muted cursor-pointer">
+                            <i class="bx bxs-image-alt"></i>
+                          </div>
+                        </div>
+                      </label>
+                      <input class="form-control d-none" value="" id="member-image-input" type="file" accept="image/png, image/gif, image/jpeg" (change)="fileChange($event)">
+                    </div>
+                    <div class="avatar-lg">
+                      <div class="avatar-title bg-light rounded-circle">
+                        <img src="assets/images/users/user-dummy-img.jpg" id="member-img" class="avatar-md rounded-circle h-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="mb-3">
+                  <label for="username-input" class="form-label">User Name</label>
+                  <input type="text" id="username-input" class="form-control" placeholder="Enter name" formControlName="name" required />
+                  <div class="invalid-feedback">Please enter a name.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="designation-input" class="form-label">Designation</label>
+                  <input type="text" id="designation-input" class="form-control" placeholder="Enter Designation" formControlName="position" required />
+                  <div class="invalid-feedback">Please enter a designation.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="email-input" class="form-label">Email</label>
+                  <input type="email" id="email-input" class="form-control" placeholder="Enter email" formControlName="email" required />
+                  <div class="invalid-feedback">Please enter email.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="tag-input" class="form-label">Tags</label>
+                  <select class="select2 form-control select2-multiple" id="tag-input" multiple="multiple" formControlName="tags" data-placeholder="Choose ...">
+                    <option value="Photoshop">Photoshop</option>
+                    <option value="illustrator">illustrator</option>
+                    <option value="Html">Html</option>
+                    <option value="Css">Css</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Php">Php</option>
+                    <option value="Java">Java</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="Python">Python</option>
+                  </select>
+                </div>
+              </div>
+  
+              <div class="col-lg-12">
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-secondary me-1" (click)="newContactModal.hide()">Cancel</button>
+                  <button type="submit" id="addContact-btn" class="btn btn-success">Add Customer</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- end modal body -->
+      </div>
+      <!-- end modal-content -->
+    </div>
+    <!-- end modal-dialog -->
+  </div>
+  <!-- end newContactModal -->
+  <!-- <div id="elmLoader" class="text-center">
+    <div class="spinner-border text-primary avatar-sm" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div> -->

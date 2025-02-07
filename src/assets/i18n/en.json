@@ -73,6 +73,7 @@
       "TEXT": "Dashboards",
       "BADGE": "04",
       "LIST": {
+        "PREDICTEDGE": "Predictedge",
         "DEFAULT": "Default",
         "SAAS": "Saas",
         "CRYPTO": "Crypto",
