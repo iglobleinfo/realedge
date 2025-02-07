@@ -17,7 +17,7 @@ import { LoaderComponent } from 'src/app/shared/ui/loader/loader.component';
   templateUrl: './default.component.html',
   styleUrls: ['./default.component.scss'],
   standalone:true,
-  imports:[PagetitleComponent,LoaderComponent,CommonModule,NgApexchartsModule,BsDropdownModule,ModalModule,TransactionComponent]
+  imports:[LoaderComponent,CommonModule,NgApexchartsModule,BsDropdownModule,ModalModule,TransactionComponent]
 })
 export class DefaultComponent implements OnInit {
   modalRef?: BsModalRef;
@@ -65,9 +65,9 @@ export class DefaultComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    setTimeout(() => {
-     this.center?.show()
-    }, 2000);
+    // setTimeout(() => {
+    //  this.center?.show()
+    // }, 2000);
   }
 
   /**

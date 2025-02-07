@@ -4,17 +4,17 @@ import 'firebase/compat/firestore';
 
 class FirebaseAuthBackend {
     constructor(firebaseConfig) {
-        if (firebaseConfig) {
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
-            firebase.auth().onAuthStateChanged((user) => {
-                if (user) {
-                    sessionStorage.setItem('authUser', JSON.stringify(user));
-                } else {
-                    sessionStorage.removeItem('authUser');
-                }
-            });
-        }
+        // if (firebaseConfig) {
+        //     // Initialize Firebase
+        //     firebase.initializeApp(firebaseConfig);
+        //     firebase.auth().onAuthStateChanged((user) => {
+        //         if (user) {
+        //             sessionStorage.setItem('authUser', JSON.stringify(user));
+        //         } else {
+        //             sessionStorage.removeItem('authUser');
+        //         }
+        //     });
+        // }
     }
 
     /**

@@ -3,7 +3,8 @@ import { DashboardsRoutingModule } from './dashboards-routing.module';
 import { BsDropdownConfig} from 'ngx-bootstrap/dropdown';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     DashboardsRoutingModule,
   ],

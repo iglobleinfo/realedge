@@ -48,10 +48,10 @@ export class TopbarComponent implements OnInit {
 
   listLang: any = [
     { text: 'English', flag: 'assets/images/flags/us.jpg', lang: 'en' },
-    { text: 'Spanish', flag: 'assets/images/flags/spain.jpg', lang: 'es' },
-    { text: 'German', flag: 'assets/images/flags/germany.jpg', lang: 'de' },
-    { text: 'Italian', flag: 'assets/images/flags/italy.jpg', lang: 'it' },
-    { text: 'Russian', flag: 'assets/images/flags/russia.jpg', lang: 'ru' },
+    { text: 'Hindi', flag: 'assets/images/flags/india.jpg', lang: 'in' },
+    // { text: 'German', flag: 'assets/images/flags/germany.jpg', lang: 'de' },
+    // { text: 'Italian', flag: 'assets/images/flags/italy.jpg', lang: 'it' },
+    // { text: 'Russian', flag: 'assets/images/flags/russia.jpg', lang: 'ru' },
   ];
 
   openMobileMenu: boolean;
@@ -153,5 +153,8 @@ export class TopbarComponent implements OnInit {
     this.store.select(getLayoutMode).subscribe((layout) => {
       document.documentElement.setAttribute('data-layout', layout)
     })
+  }
+  lockScreen(){
+    this.router.navigate(['/pages/lock-screen-1']);
   }
 }

@@ -3,6 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  API_URL: "https://api.iotasmart.com",
+  AUTOML_API_URL: "https://ai.iotasmart.com/api",
+  CLIENT_ID: "iotasmart",
+  CLIENT_SECRET: "iotasmart-auth",
+  APIKEY: 'IOTASMART',
+  ANN_URL: "https://api.iotasmart.com/annn",
+  ARS_URL: "https://api.iotasmart.com/ars",
+  MQTT_URL: "pubsub.iotasmart.com",
+  TCL_API_URL: "https://predictedgeapi.iotasmart.com",
   production: false,
   defaultauth: 'fakebackend',
   firebaseConfig: {

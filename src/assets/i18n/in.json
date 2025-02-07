@@ -1,0 +1,342 @@
+{
+    "HEADER": {
+      "SEARCH": "खोजें...",
+      "MEGA_MENU": "मेगा मेनू",
+      "NOTIFICATIONS": {
+        "TITLE": "सूचनाएं",
+        "VIEW_ALL": "सभी देखें",
+        "LOAD_MORE": "और देखें..",
+        "FIRST": {
+          "TITLE": "आपका ऑर्डर लगाया गया है",
+          "TEXT": "यदि कई भाषाएं व्याकरण को मिलाती हैं",
+          "TIME": "3 मिनट पहले"
+        },
+        "SECOND": {
+          "TITLE": "जेम्स लेमायर",
+          "TEXT": "यह सरल अंग्रेजी की तरह लगेगा।",
+          "TIME": "1 घंटा पहले"
+        },
+        "THIRD": {
+          "TITLE": "आपका आइटम शिप किया गया है",
+          "TEXT": "यदि कई भाषाएं व्याकरण को मिलाती हैं",
+          "TIME": "3 मिनट पहले"
+        },
+        "FOUR": {
+          "TITLE": "सेलेना लेफील्ड",
+          "TEXT": "मेरे एक संदेहवादी कैम्ब्रिज मित्र के रूप में।",
+          "TIME": "1 घंटा पहले"
+        }
+      },
+      "SETTINGS": "सेटिंग्स",
+      "UI": {
+        "TITLE": "UI कंपोनेंट्स",
+        "LIGHTBOX": "लाइटबॉक्स",
+        "RANGE_SLIDER": "रेंज स्लाइडर",
+        "SWEET_ALERT": "स्वीट अलर्ट",
+        "RATING": "रेटिंग",
+        "FORMS": "फॉर्म्स",
+        "TABLES": "टेबल्स",
+        "CHARTS": "चार्ट्स"
+      },
+      "APPLICATIONS": {
+        "TITLE": "एप्लिकेशन्स",
+        "ECOMMERCE": "ई-कॉमर्स",
+        "CALENDAR": "कैलेंडर",
+        "EMAIL": "ईमेल",
+        "PROJECTS": "प्रोजेक्ट्स",
+        "TASKS": "टास्क्स",
+        "CONTACTS": "संपर्क"
+      },
+      "EXTRA_PAGES": {
+        "TITLE": "अतिरिक्त पेज",
+        "LIGHT_SIDEBAR": "हल्का साइडबार",
+        "COMPACT_SIDEBAR": "कॉम्पैक्ट साइडबार",
+        "HORIZONTAL_LAYOUT": "क्षैतिज लेआउट",
+        "MAINTENANCE": "रखरखाव",
+        "COMING SOON": "जल्द ही आ रहा है",
+        "TIMELINE": "टाइमलाइन",
+        "FAQ": "सामान्य प्रश्न"
+      },
+      "LOGIN": {
+        "PROFILE": "प्रोफाइल",
+        "MY_WALLET": "मेरा वॉलेट",
+        "SETTINGS": "सेटिंग्स",
+        "LOCK_SCREEN": "लॉक स्क्रीन",
+        "LOGOUT": "लॉगआउट"
+      }
+    },
+    "MENUITEMS": {
+      "MENU": {
+        "TEXT": "मेनू"
+      },
+      "DASHBOARDS": {
+        "TEXT": "डैशबोर्ड",
+        "BADGE": "04",
+        "LIST": {
+          "PREDICTEDGE": "प्रेडिक्टएज",
+          "DEFAULT": "डिफ़ॉल्ट",
+          "SAAS": "सास",
+          "CRYPTO": "क्रिप्टो",
+          "BLOG": "ब्लॉग",
+          "JOBS": "नौकरियां"
+        }
+      },
+      "LAYOUTS": {
+        "TEXT": "लेआउट्स",
+        "LIST": {
+          "HORIZONTAL": "क्षैतिज",
+          "LIGHTSIDEBAR": "हल्का साइडबार",
+          "COMPACTSIDEBAR": "कॉम्पैक्ट साइडबार",
+          "ICONSIDEBAR": "आइकन साइडबार",
+          "BOXED": "बॉक्स्ड लेआउट",
+          "COLOREDSIDEBAR": "रंगीन साइडबार",
+          "VERTICAL": "लंबवत",
+          "LIGHTTOPBAR": "हल्का टॉपबार",
+          "COLOREDHEADER": "रंगीन हेडर",
+          "SCROLLABLE": "स्क्रॉल करने योग्य"
+        }
+      },
+      "APPS": {
+        "TEXT": "ऐप्स"
+      },
+      "CALENDAR": {
+        "TEXT": "कैलेंडर"
+      },
+      "CHAT": {
+        "TEXT": "चैट",
+        "BADGE": "नया"
+      },
+      "FILEMANAGER": {
+        "TEXT": "फ़ाइल प्रबंधक",
+        "BADGE": "नया"
+      },
+      "ECOMMERCE": {
+        "TEXT": "ई-कॉमर्स",
+        "LIST": {
+          "PRODUCTS": "उत्पाद",
+          "PRODUCTDETAIL": "उत्पाद विवरण",
+          "ORDERS": "ऑर्डर",
+          "CUSTOMERS": "ग्राहक",
+          "CART": "कार्ट",
+          "CHECKOUT": "चेकआउट",
+          "SHOPS": "दुकानें",
+          "ADDPRODUCT": "उत्पाद जोड़ें"
+        }
+      },
+      "CRYPTO": {
+        "TEXT": "क्रिप्टो",
+        "LIST": {
+          "WALLET": "वॉलेट",
+          "BUY/SELL": "खरीदें/बेचें",
+          "EXCHANGE": "एक्सचेंज",
+          "LENDING": "लेंडिंग",
+          "ORDERS": "ऑर्डर",
+          "KYCAPPLICATION": "KYC आवेदन",
+          "ICOLANDING": "ICO लैंडिंग"
+        }
+      },
+      "EMAIL": {
+        "TEXT": "ईमेल",
+        "LIST": {
+          "INBOX": "इनबॉक्स",
+          "READEMAIL": "ईमेल पढ़ें",
+          "TEMPLATE": {
+            "BADGE": "नया",
+            "TEXT": "टेम्पलेट",
+            "LIST": {
+              "BASIC": "बेसिक एक्शन",
+              "ALERT": "अलर्ट ईमेल",
+              "BILLING": "बिलिंग ईमेल"
+            }
+          }
+        }
+      },
+      "INVOICES": {
+        "TEXT": "चालान",
+        "LIST": {
+          "INVOICELIST": "चालान सूची",
+          "INVOICEDETAIL": "चालान विवरण"
+        }
+      },
+      "PROJECTS": {
+        "TEXT": "प्रोजेक्ट्स",
+        "LIST": {
+          "GRID": "प्रोजेक्ट्स ग्रिड",
+          "PROJECTLIST": "प्रोजेक्ट्स सूची",
+          "OVERVIEW": "प्रोजेक्ट अवलोकन",
+          "CREATE": "नया बनाएं"
+        }
+      },
+      "TASKS": {
+        "TEXT": "टास्क्स",
+        "LIST": {
+          "TASKLIST": "टास्क सूची",
+          "KANBAN": "कानबान बोर्ड",
+          "CREATETASK": "टास्क बनाएं"
+        }
+      },
+      "CONTACTS": {
+        "TEXT": "संपर्क",
+        "LIST": {
+          "USERGRID": "उपयोगकर्ता ग्रिड",
+          "USERLIST": "उपयोगकर्ता सूची",
+          "PROFILE": "प्रोफाइल"
+        }
+      },
+      "BLOG": {
+        "TEXT": "ब्लॉग",
+        "BADGE": "नया",
+        "LIST": {
+          "BLOGLIST": "ब्लॉग सूची",
+          "BLOGGRID": "ब्लॉग ग्रिड",
+          "DETAIL": "ब्लॉग विवरण"
+        }
+      },
+      "JOBS": {
+        "TEXT": "नौकरियां",
+        "BADGE": "नया",
+        "LIST": {
+          "JOBLIST": "नौकरी सूची",
+          "JOBGRID": "नौकरी ग्रिड",
+          "APPLYJOB": "नौकरी के लिए आवेदन करें",
+          "JOBDETAILS": "नौकरी विवरण",
+          "JOBCATEGORIES": "नौकरी श्रेणियां",
+          "CANDIDATE": {
+            "TEXT": "उम्मीदवार",
+            "LIST": {
+              "LIST": "सूची",
+              "OVERVIEW": "अवलोकन"
+            }
+          }
+        }
+      },
+      "PAGES": {
+        "TEXT": "पेज"
+      },
+      "AUTHENTICATION": {
+        "TEXT": "प्रमाणीकरण",
+        "BADGE": "नया",
+        "LIST": {
+          "LOGIN": "लॉगिन",
+          "LOGIN2": "लॉगिन 2",
+          "REGISTER": "रजिस्टर",
+          "REGISTER2": "रजिस्टर 2",
+          "RECOVERPWD": "पासवर्ड पुनर्प्राप्त करें",
+          "RECOVERPWD2": "पासवर्ड पुनर्प्राप्त करें 2",
+          "LOCKSCREEN": "लॉक स्क्रीन",
+          "LOCKSCREEN2": "लॉक स्क्रीन 2",
+          "CONFIRMMAIL": "मेल की पुष्टि करें",
+          "CONFIRMMAIL2": "मेल की पुष्टि करें 2",
+          "EMAILVERIFICATION": "ईमेल सत्यापन",
+          "EMAILVERIFICATION2": "ईमेल सत्यापन 2",
+          "TWOSTEPVERIFICATION": "दो-चरणीय सत्यापन",
+          "TWOSTEPVERIFICATION2": "दो-चरणीय सत्यापन 2"
+        }
+      },
+      "UTILITY": {
+        "TEXT": "उपयोगिता",
+        "LIST": {
+          "STARTER": "स्टार्टर पेज",
+          "MAINTENANCE": "रखरखाव",
+          "TIMELINE": "टाइमलाइन",
+          "FAQS": "सामान्य प्रश्न",
+          "PRICING": "मूल्य निर्धारण",
+          "ERROR404": "त्रुटि 404",
+          "ERROR500": "त्रुटि 500"
+        }
+      },
+      "COMPONENTS": {
+        "TEXT": "कंपोनेंट्स"
+      },
+      "UIELEMENTS": {
+        "TEXT": "UI एलिमेंट्स",
+        "LIST": {
+          "ALERTS": "अलर्ट्स",
+          "BUTTONS": "बटन्स",
+          "CARDS": "कार्ड्स",
+          "CAROUSEL": "कैरोसेल",
+          "DROPDOWNS": "ड्रॉपडाउन्स",
+          "GRID": "ग्रिड",
+          "IMAGES": "छवियां",
+          "LIGHTBOX": "लाइटबॉक्स",
+          "MODALS": "मोडल्स",
+          "RANGESLIDER": "रेंज स्लाइडर",
+          "PROGRESSBAR": "प्रगति बार",
+          "PLACEHOLDER": "प्लेसहोल्डर",
+          "SWEETALERT": "स्वीट अलर्ट",
+          "TABS": "टैब्स और एकॉर्डियन्स",
+          "TYPOGRAPHY": "टाइपोग्राफी",
+          "TOASTS": "टोस्ट्स",
+          "VIDEO": "वीडियो",
+          "GENERAL": "सामान्य",
+          "COLORS": "रंग",
+          "RATING": "रेटिंग",
+          "NOTIFICATION": "सूचना",
+          "UTILITIES": "उपयोगिताएं",
+          "CROPPER": "छवि क्रॉपर"
+        }
+      },
+      "FORMS": {
+        "TEXT": "फॉर्म्स",
+        "BADGE": "09",
+        "LIST": {
+          "ELEMENTS": "फॉर्म एलिमेंट्स",
+          "VALIDATION": "फॉर्म सत्यापन",
+          "ADVANCED": "फॉर्म एडवांस्ड",
+          "EDITOR": "फॉर्म एडिटर",
+          "FILEUPLOAD": "फॉर्म फ़ाइल अपलोड",
+          "REPEATER": "फॉर्म रिपीटर",
+          "WIZARD": "फॉर्म विज़ार्ड",
+          "MASK": "फॉर्म मास्क",
+          "LAYOUTS": "फॉर्म लेआउट्स"
+        }
+      },
+      "TABLES": {
+        "TEXT": "टेबल्स",
+        "LIST": {
+          "BASIC": "बेसिक टेबल्स",
+          "DataTables": "डेटा टेबल्स",
+          "EditTableTables": "संपादन योग्य टेबल"
+        }
+      },
+      "CHARTS": {
+        "TEXT": "चार्ट्स",
+        "LIST": {
+          "APEX": "एपेक्स चार्ट",
+          "CHARTJS": "चार्टजेएस चार्ट",
+          "CHARTIST": "चार्टिस्ट चार्ट",
+          "ECHART": "ई चार्ट"
+        }
+      },
+      "ICONS": {
+        "TEXT": "आइकन्स",
+        "LIST": {
+          "BOXICONS": "बॉक्सआइकन्स",
+          "MATERIALDESIGN": "मटेरियल डिज़ाइन",
+          "DRIPICONS": "ड्रिपआइकन्स",
+          "FONTAWESOME": "फॉन्ट ऑवसम"
+        }
+      },
+      "MAPS": {
+        "TEXT": "मानचित्र",
+        "LIST": {
+          "GOOGLEMAP": "गूगल मैप्स",
+          "LEAFLETMAP": "लीफलेट मैप्स",
+          "AMCHARTS": "एमचार्ट्स"
+        }
+      },
+      "MULTILEVEL": {
+        "TEXT": "मल्टी लेवल",
+        "LIST": {
+          "LEVEL1": {
+            "1": "स्तर 1.1",
+            "2": "स्तर 1.2",
+            "LEVEL2": {
+              "1": "स्तर 2.1",
+              "2": "स्तर 2.2"
+            }
+          }
+        }
+      }
+    }
+  }

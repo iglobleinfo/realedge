@@ -6,11 +6,16 @@ import { SaasComponent } from './saas/saas.component';
 import { CryptoComponent } from './crypto/crypto.component';
 import { BlogComponent } from './blog/blog.component';
 import { JobsComponent } from "./jobs/jobs.component";
+import { PredictedgeComponent } from './predictedge/predictedge.component';
 
 const routes: Routes = [
     {
         path: 'default',
         component: DefaultComponent
+    },
+    {
+        path: 'predictedge',
+        component: PredictedgeComponent
     },
     {
         path: 'saas',
